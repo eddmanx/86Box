@@ -2688,7 +2688,7 @@ fdc_3f1_enable(fdc_t *fdc, int enable)
 const device_t fdc_xt_device = {
     .name          = "PC/XT Floppy Drive Controller",
     .internal_name = "fdc_xt",
-    .flags         = 0,
+    .flags         = DEVICE_ISA,
     .local         = 0,
     .init          = fdc_init,
     .close         = fdc_close,
@@ -2784,9 +2784,9 @@ const device_t fdc_xt_tandy_device = {
 };
 
 const device_t fdc_xt_umc_um8398_device = {
-    .name          = "PC/XT Floppy Drive Controller (UMC UM8398)",
+    .name          = "UMC UM8398",
     .internal_name = "fdc_xt_umc_um8398",
-    .flags         = 0,
+    .flags         = DEVICE_ISA,
     .local         = FDC_FLAG_UMC,
     .init          = fdc_init,
     .close         = fdc_close,
@@ -2828,7 +2828,7 @@ const device_t fdc_pcjr_device = {
 const device_t fdc_at_device = {
     .name          = "PC/AT Floppy Drive Controller",
     .internal_name = "fdc_at",
-    .flags         = 0,
+    .flags         = DEVICE_ISA16,
     .local         = FDC_FLAG_AT,
     .init          = fdc_init,
     .close         = fdc_close,
@@ -2910,9 +2910,9 @@ const device_t fdc_at_smc_661_device = {
 };
 
 const device_t fdc_at_smc_device = {
-    .name          = "PC/AT Floppy Drive Controller (SM(s)C FDC37Cxxx)",
+    .name          = "SM(s)C FDC37Cxxx",
     .internal_name = "fdc_at_smc",
-    .flags         = 0,
+    .flags         = DEVICE_ISA16,
     .local         = FDC_FLAG_AT | FDC_FLAG_SUPERIO,
     .init          = fdc_init,
     .close         = fdc_close,
@@ -2938,9 +2938,9 @@ const device_t fdc_at_ali_device = {
 };
 
 const device_t fdc_at_winbond_device = {
-    .name          = "PC/AT Floppy Drive Controller (Winbond W83x77F)",
+    .name          = "Winbond W83x77F",
     .internal_name = "fdc_at_winbond",
-    .flags         = 0,
+    .flags         = DEVICE_ISA16,
     .local         = FDC_FLAG_AT | FDC_FLAG_SUPERIO | FDC_FLAG_START_RWC_1 | FDC_FLAG_MORE_TRACKS,
     .init          = fdc_init,
     .close         = fdc_close,
@@ -2952,9 +2952,9 @@ const device_t fdc_at_winbond_device = {
 };
 
 const device_t fdc_at_nsc_device = {
-    .name          = "PC/AT Floppy Drive Controller (NSC PC8730x)",
+    .name          = "NSC PC8730x",
     .internal_name = "fdc_at_nsc",
-    .flags         = 0,
+    .flags         = DEVICE_ISA16,
     .local         = FDC_FLAG_AT | FDC_FLAG_MORE_TRACKS | FDC_FLAG_NSC,
     .init          = fdc_init,
     .close         = fdc_close,
@@ -2966,9 +2966,9 @@ const device_t fdc_at_nsc_device = {
 };
 
 const device_t fdc_at_nsc_dp8473_device = {
-    .name          = "PC/AT Floppy Drive Controller (NSC DP8473)",
+    .name          = "NSC DP8473",
     .internal_name = "fdc_at_nsc_dp8473",
-    .flags         = 0,
+    .flags         = DEVICE_ISA16,
     .local         = FDC_FLAG_AT | FDC_FLAG_NEC | FDC_FLAG_NO_DSR_RESET,
     .init          = fdc_init,
     .close         = fdc_close,
