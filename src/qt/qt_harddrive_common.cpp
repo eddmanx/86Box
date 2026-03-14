@@ -199,7 +199,7 @@ Harddrives::BusChannelName(uint8_t bus, uint8_t channel)
             busName = QString(QObject::tr("Disabled"));
             break;
         case HDD_BUS_MFM:
-            busName = QString("MFM/RLL (%1:%2)").arg(channel >> 1).arg(channel & 1);
+            busName = QString("ST-506/ST-412 (MFM/RLL) (%1:%2)").arg(channel >> 1).arg(channel & 1);
             break;
         case HDD_BUS_XTA:
             busName = QString("XTA (%1:%2)").arg(channel >> 1).arg(channel & 1);

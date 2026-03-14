@@ -850,7 +850,7 @@ const device_t ide_cmd646_single_channel_device = {
 };
 
 const device_t ide_cmd646_ter_qua_device = {
-    .name          = "CMD PCI-0646 (Tertiary and Quaternary)",
+    .name          = "CMD PCI-0646 (Tertiary and Quaternary IDE)",
     .internal_name = "ide_cmd646_ter_qua",
     .flags         = DEVICE_PCI,
     .local         = 0x008008f,
@@ -864,7 +864,7 @@ const device_t ide_cmd646_ter_qua_device = {
 };
 
 const device_t ide_cmd648_ter_qua_device = {
-    .name          = "CMD PCI-0648 (Tertiary and Quaternary)",
+    .name          = "CMD PCI-0648 (Tertiary and Quaternary IDE)",
     .internal_name = "ide_cmd648_ter_qua",
     .flags         = DEVICE_PCI,
     .local         = 0x0d8008f,
@@ -892,7 +892,7 @@ const device_t ide_cmd648_ter_qua_onboard_device = {
 };
 
 const device_t ide_cmd649_ter_qua_device = {
-    .name          = "CMD PCI-0649 (Tertiary and Quaternary)",
+    .name          = "CMD PCI-0649 (Tertiary and Quaternary IDE)",
     .internal_name = "ide_cmd649_ter_qua",
     .flags         = DEVICE_PCI,
     .local         = 0x0f8008f,

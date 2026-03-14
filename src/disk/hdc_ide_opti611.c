@@ -333,7 +333,7 @@ opti611_init(UNUSED(const device_t *info))
 }
 
 const device_t ide_opti611_vlb_device = {
-    .name          = "OPTi 82C611/82C611A VLB",
+    .name          = "OPTi 82C611/82C611A VLB (IDE)",
     .internal_name = "ide_opti611_vlb",
     .flags         = DEVICE_VLB,
     .local         = 0,

@@ -910,7 +910,7 @@ MachineStatus::refresh(QStatusBar *sbar)
         d->hdds[HDD_BUS_MFM].setActive(false);
         d->hdds[HDD_BUS_MFM].setWriteActive(false);
         d->hdds[HDD_BUS_MFM].refresh();
-        d->hdds[HDD_BUS_MFM].label->setToolTip(tr("Hard disk (%1)").arg("MFM/RLL"));
+        d->hdds[HDD_BUS_MFM].label->setToolTip(tr("Hard disk (%1)").arg("ST-506/ST-412 (MFM/RLL)"));
         auto tooltip = d->hdds[HDD_BUS_MFM].label->toolTip();
         tooltip.append("\n");
         for (int i = 0; i < HDD_NUM; i++) {
